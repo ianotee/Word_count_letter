@@ -1,0 +1,112 @@
+{%extends 'base.html'%}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{%block title%}counter{%endblock%}</title>
+  </head>
+  <body>
+    {%block content%}
+    <div>
+      <style type="text/css">
+        .header {
+          background-color: #333;
+          color: white;
+          padding: 20px;
+          text-align: center;
+        }
+
+        .header:hover {
+          background-color: black;
+        }
+        /* Styling for hyperlink */
+a {
+  color: #007bff; /* Set hyperlink color */
+  text-decoration: none; /* Remove underline by default */
+}
+
+/* Styling for visited hyperlink */
+a:visited {
+  color: #800080; /* Set color for visited hyperlink */
+}
+
+/* Hover effect for hyperlink */
+a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+/* Styling for active hyperlink */
+a:active {
+  color: #ff0000; /* Set color for active hyperlink */
+}
+/* Styling for hyperlink */
+a {
+  color: #007bff; /* Set hyperlink color */
+  text-decoration: none; /* Remove underline by default */
+  border-radius: 5px; /* Add border radius */
+  padding: 5px 10px; /* Add padding for spacing */
+}
+
+/* Styling for visited hyperlink */
+a:visited {
+  color: #800080; /* Set color for visited hyperlink */
+}
+
+/* Hover effect for hyperlink */
+a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+/* Styling for active hyperlink */
+a:active {
+  color: #ff0000; /* Set color for active hyperlink */
+}
+/* Styling for hyperlink */
+a {
+  color: #007bff; /* Set hyperlink color */
+  text-decoration: none; /* Remove underline by default */
+  border-radius: 5px; /* Add border radius */
+  padding: 5px 10px; /* Add padding for spacing */
+  border: 2px solid #007bff; /* Add border */
+  box-sizing: border-box; /* Add border box effect */
+}
+
+/* Styling for visited hyperlink */
+a:visited {
+  color: #800080; /* Set color for visited hyperlink */
+}
+
+/* Hover effect for hyperlink */
+a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+/* Styling for active hyperlink */
+a:active {
+  color: #ff0000; /* Set color for active hyperlink */
+}
+/* Styling for hyperlink */
+a {
+  color: #007bff; /* Set hyperlink color */
+  text-decoration: none; /* Remove underline by default */
+  border-radius: 5px; /* Add border radius */
+  padding: 5px 10px; /* Add padding for spacing */
+  border: 2px solid #007bff; /* Add border */
+  box-sizing: border-box; /* Add border box effect */
+}
+
+/* Hover effect for hyperlink */
+a:hover {
+  text-decoration: none; /* Add underline on hover */
+  border-color: #000; /* Change border color to black on hover */
+}
+      </style>
+      <h1 class="header">{{calc}}</h1>
+      <h1>{{noun}}: {{amount}}</h1>
+
+      <a href="{% url 'home'%}">Home</a>
+      {%endblock%}
+    </div>
+  </body>
+</html>
